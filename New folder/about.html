@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me.</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+        <header >
+            <h1>My information.</h1><hr>
+            <table border="5" cellspacing="5" >
+                <thead>
+                    <tr>
+                        <th>Họ và tên</th>
+                        <th>Ngày sinh</th>
+                        <th>Địa chỉ</th>
+                        <th>Facebook</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td>Phạm Nhật Tùng</td>
+                            <td>19/12/1999</td>
+                            <td>Nam Định</td>
+                            <td><a href="https://www.facebook.com/inorin1912" target="_blank">Nhật Tùng.</a></td>
+                            <td>0843231470</td>
+                    </tr>
+                    <tr>
+                            <td>Nguyễn Thị Lan Anh</td>
+                            <td>21/01/1999</td>
+                            <td>Nam Định</td>
+                            <td>LanAnh Nguyen</td>
+                            <td></td>
+                    </tr>
+                </tbody>           
+                <caption align="bottom">Our brief information</caption>
+            </table>
+        </header>
+    <section>
+        <h2> Wanna contact with us? Leave ur information below.</h2>
+        <form action="about.html" method="POST" >
+            <fieldset>
+                <legend><b>Your brief information.</b></legend>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="user_name"> <br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" id="user_email"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="user_password"><br><br>
+                <label for="gender">Gender</label>
+                <select id="gender" name="user_name">
+                    <option value="gender_male">Male</option>
+                    <option value="gender_female">Female</option>
+                </select><br><br>
+                <label>Relationship</label>
+                <input type="radio" id="friend" name="user_relationship"><label for="friend">Friend</label>
+                <input type="radio" id="stranger" name="user_relationship"><label for="stranger">Stranger</label>
+            <br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Your message.</b></legend>
+                <label for="message">Message</label><br>
+                <textarea name="user_message" id="message" cols="30" rows="10"></textarea><br><br>
+            </fieldset><br><br>
+            <fieldset>
+                <legend><b>Contact</b></legend>
+                <label>Wanna contact with us via:</label>
+                <input type="checkbox" id="letter"    value="letter"    name="communication">
+                <label for="letter">Letter</label>
+
+                <input type="checkbox" id="email"    value="email"    name="communication">
+                <label for="email">Email</label>
+
+                <input type="checkbox" id="phone"    value="phone"    name="communication">
+                <label for="phone">Phone</label>
+
+                <input type="checkbox" id="meet"    value="meet"    name="communication">
+                <label for="meet">Meeting</label>
+            </fieldset><br><br>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+<hr>
+<h2>Navigate link bellow.</h2>
+<a href="index.html" target="_blank">Home.</a> <br>
+<a href="service.html" target="_blank">Service.</a> <br>
+<a href="gallery.html" target="_blank">Gallery.</a> <br>
+<a href="content.html" target="_blank">Content.</a> <br>
+</html>
